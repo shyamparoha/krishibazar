@@ -1,0 +1,27 @@
+h3 {
+  font-family: "Fantasy";
+  font-size: 25pt;
+  font-style: normal;
+  font-weight: bolder;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+table {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align: 2px;
+  background-color: rgba(22, 22, 22, 0.495);
+  border-collapse: collapse;
+  border: 0px solid navy;
+}
+table.inner {
+  border: 1px;
+}
+body {
+  background-image: url("../images/FARM.jpg");
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>block1</title>
+    <style>
+      nav {
+        background-color: #cec8c8f4;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+      body {
+        background-image: url("../images/shutterstock_1116673256-1.jpg");
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+      }
+
+      li {
+        margin-right: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #faf7f7;
+        font-size: 18px;
+      }
+
+      .menu-toggle {
+        display: none;
+        color: #000000;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 768px) {
+        ul {
+          display: none;
+        }
+
+        .menu-toggle {
+          display: block;
+        }
+
+        nav.active ul {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          background-color: #2b2424;
+          padding: 20px;
+        }
+
+        nav.active li {
+          margin: 10px 0;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        background-color: rgb(0, 0, 0);
+        padding: 15px 25px 15px 20px;
+        margin: 10px 20px;
+        font-family: sans-serif;
+        border-radius: 6px;
+      }
+      .container {
+        /* border: 2px solid blue; */
+        width: 498px;
+        height: 300px;
+        background-color: #ffffff72;
+        display: inline-block;
+        margin-top: 200px;
+        text-align: center;
+      }
+      h1 {
+        margin-top: 80px;
+      }
+      footer {
+        background-color: #09060624;
+        color: #f1efef;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">होम</a></li>
+        <li><a href="#">हमारे बारे में</a></li>
+        <li><a href="#">सेवायें</a></li>
+        <li><a href="#">संपर्क करें</a></li>
+      </ul>
+      <div class="menu-toggle"><i class="fa fa-bars"></i></div>
+    </nav>
+
+    <div class="container">
+      <h1>उपकरण खरीदें</h1>
+      <a href="tools.html">यहाँ दबायें</a>
+    </div>
+    <div class="container">
+      <h1>जमीन किराए पर लेने/खरीदने के लिए</h1>
+      <a href="rent property.html">यहाँ दबायें</a>
+    </div>
+    <div class="container">
+      <h1>जमीन किराए पर देने/बेचने के लिए</h1>
+      <a href="buyproperty.html">यहाँ दबायें</a>
+    </div>
+    <footer>
+      <p>Copyright &copy; 2023 KRISHIbazar. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
